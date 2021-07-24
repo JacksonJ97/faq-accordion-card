@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-}
-
 html {
   height: 100%;
 }
@@ -40,7 +36,7 @@ h1 {
   transform: scaleY(-1);
 }
 
-.faq-container {
+.faq-card {
   border-radius: 16px;
   background-color: white;
   box-shadow: 5px 8px 20px 0px rgba(0, 0, 0, 0.4);
@@ -68,7 +64,7 @@ h1 {
   right: 0;
 }
 
-.accordian-container {
+.accordion-container {
   margin-top: 2em;
 }
 
@@ -84,20 +80,22 @@ h1 {
   align-items: center;
 }
 
-.question-container a {
+.question-container p {
   color: hsl(238, 29%, 16%);
+  cursor: pointer;
 }
 
-.question-container a p:hover,
-.question-container a p:focus {
+.question-container p:hover,
+.question-container p:focus {
   color: hsl(14, 88%, 65%);
 }
 
-.question-container a img {
-  align-self: flex-end;
+.arrow {
+  cursor: pointer;
 }
 
 .answer-container {
   margin-top: 1em;
+  line-height: 1.5;
   color: hsl(240, 6%, 50%);
 }
