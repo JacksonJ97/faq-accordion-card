@@ -28,6 +28,18 @@ h1 {
   font-size: 2rem;
 }
 
+.active {
+  display: none;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.flip {
+  transform: scaleY(-1);
+}
+
 .faq-container {
   border-radius: 16px;
   background-color: white;
@@ -36,6 +48,24 @@ h1 {
   max-width: 390px;
   padding: 10em 2em 2em 2em;
   position: relative;
+}
+
+.mobile-illustration-container {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  margin-right: -120px;
+  margin-top: -105px;
+}
+
+.mobile-illustration {
+  position: relative;
+}
+
+.mobile-bg {
+  position: absolute;
+  top: 55%;
+  right: 0;
 }
 
 .accordian-container {
@@ -70,34 +100,4 @@ h1 {
 .answer-container {
   margin-top: 1em;
   color: hsl(240, 6%, 50%);
-}
-
-.mobile-illustration-container {
-  position: absolute;
-  top: 0;
-  right: 50%;
-  margin-right: -120px;
-  margin-top: -105px;
-}
-
-.mobile-illustration {
-  position: relative;
-}
-
-.mobile-bg {
-  position: absolute;
-  top: 55%;
-  right: 0;
-}
-
-.active {
-  display: none;
-}
-
-.bold {
-  font-weight: 700;
-}
-
-.flip {
-  transform: scaleY(-1);
 }
