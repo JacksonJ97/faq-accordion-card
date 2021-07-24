@@ -38,17 +38,29 @@ h1 {
   position: relative;
 }
 
+.accordian-container {
+  margin-top: 2em;
+}
+
 .question-container {
   padding-bottom: 2em;
   margin-bottom: 2em;
   border-bottom: 1px solid hsl(240, 5%, 91%);
 }
 
-.question-container a {
+.question-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.question-container a p {
   color: hsl(238, 29%, 16%);
+}
+
+.question-container a p:hover,
+.question-container a p:focus {
+  color: hsl(14, 88%, 65%);
 }
 
 .question-container a img {
@@ -57,7 +69,7 @@ h1 {
 
 .mobile-illustration-container {
   position: absolute;
-  bottom: 82%;
+  bottom: 83%;
   right: 50%;
   margin-right: -120px;
 }
