@@ -16,6 +16,6 @@ function toggleClasses(index) {
 accordions.forEach((accordion, index) => {
   accordion.addEventListener("click", function () {
     toggleClasses(index);
-    document.body.style.height = document.body.scrollHeight + "px";
+    // document.body.style.height = document.body.scrollHeight + "px";
   });
 });

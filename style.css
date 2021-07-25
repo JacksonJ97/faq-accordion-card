@@ -42,6 +42,10 @@ h1 {
   top: 130px;
 }
 
+.desktop-illustration-container {
+  display: none;
+}
+
 .mobile-illustration-container {
   position: absolute;
   top: 0;
@@ -90,4 +94,60 @@ h1 {
   margin-top: 1em;
   line-height: 1.5;
   color: hsl(240, 6%, 50%);
+}
+
+@media (min-width: 1200px) {
+  body {
+    font-size: 0.875rem;
+  }
+
+  .desktop-illustration-container {
+    display: block;
+  }
+
+  .mobile-illustration-container {
+    display: none;
+  }
+
+  .desktop-illustration {
+    position: relative;
+    left: -16%;
+  }
+
+  .desktop-image {
+    margin-top: 6em;
+  }
+
+  .desktop-box {
+    position: fixed;
+    margin-left: -489px;
+    margin-top: 225px;
+    z-index: 2;
+  }
+
+  .desktop-bg {
+    position: absolute;
+    left: -105%;
+    top: -65%;
+    z-index: -2;
+  }
+
+  .faq-card {
+    display: flex;
+    max-width: 1000px;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 6em;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .accordion-container {
+    margin-top: 6em;
+    width: 50%;
+  }
+
+  h1 {
+    text-align: left;
+  }
 }
