@@ -25,6 +25,8 @@ accordions.forEach((accordion, index) => {
   });
 
   accordion.addEventListener("mouseleave", function () {
-    questionTextsArr[index].classList.remove("hover");
+    if (questionTextsArr[index].classList.contains("hover")) {
+      questionTextsArr[index].classList.remove("hover");
+    }
   });
 });
