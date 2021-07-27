@@ -27,6 +27,10 @@ h1 {
   transform: scaleY(-1);
 }
 
+.hover {
+  color: hsl(14, 88%, 65%);
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -92,13 +96,8 @@ h1 {
   align-items: center;
 }
 
-.question-container p {
+.question-texts {
   color: hsl(238, 29%, 16%);
-}
-
-.question-container p:hover,
-.question-container p:focus {
-  color: hsl(14, 88%, 65%);
 }
 
 .answer-container {

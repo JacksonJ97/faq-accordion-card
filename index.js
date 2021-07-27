@@ -1,5 +1,4 @@
 const accordions = document.querySelectorAll(".dropdown-container");
-const accordionContainer = Array.from(accordions);
 const questionTexts = document.querySelectorAll(".question-text");
 const questionTextsArr = Array.from(questionTexts);
 const arrows = document.querySelectorAll(".arrow");
@@ -16,5 +15,16 @@ function toggleClasses(index) {
 accordions.forEach((accordion, index) => {
   accordion.addEventListener("click", function () {
     toggleClasses(index);
+    questionTextsArr[index].classList.remove("hover");
+  });
+
+  accordion.addEventListener("mouseenter", function () {
+    if (!questionTextsArr[index].classList.contains("bold")) {
+      questionTextsArr[index].classList.add("hover");
+    }
+  });
+
+  accordion.addEventListener("mouseleave", function () {
+    questionTextsArr[index].classList.remove("hover");
   });
 });
