@@ -46,7 +46,7 @@ Users should be able to:
 
 ### What I learned
 
-In this project I practiced DOM manipulation where I used it to hide/show an accordion panel. I used JavaScript to select the elements that were going to change when the click event on the accordion is fired. When the click event was fired, certain classes were toggled to show when the panel was open and to hide when the panel is closed. I also practiced positioning elements in CSS which was needed to piece together the mobile and desktop illustration.
+In this project, I practiced DOM manipulation to hide/show an accordion panel. I used JavaScript to select the elements that were going to change when the click event on the accordion is fired. When the click event was fired, certain classes were toggled depending on if the panel was opened or closed. I also practiced positioning elements in CSS which was needed to piece together the mobile and desktop illustration.
 
 ## Author
 
